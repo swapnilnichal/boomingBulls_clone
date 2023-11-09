@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccs-style.css">
+    <!-- bootstrp links start  -->
+    <link href="https://www.dafontfree.net/embed/bnVuaXRvLXNhbnMtbGlnaHQmZGF0YS84MDcvbi8xODE3NjEvTnVuaXRvU2Fucy1MaWdodC50dGY" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrp links end  -->
+    <title>refund policy</title>
+    <style>
+        * {box-sizing: border-box}
+        h1,h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar starts here  -->
+
+<div class="container-fluid my-2" id="nav-container-wrapper">
+    <div class="logo">
+        <a class="nav-link " aria-current="page" href="#"><img class="boom-logo" src="https://boomingbulls.com/wp-content/uploads/2021/06/250-x-69.png" alt="logo"></a>
+    </div>
+
+<div class="nav-wrapper ">
+  <ul class="nav">
+    <li class="nav-item1">
+      <a class="nav-link" href="/index.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+         <ul class="dropdown-menu py-3 px-3">
+            <li><a class="dropdown-item" href="#">About Booming Bulls</a></li>
+            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="course.html">Online Courses</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Offline Courses</a>
+          <ul class="dropdown-menu py-4 px-4">
+            <li><a class="dropdown-item" href="#">Delhi</a></li>
+            <li><a class="dropdown-item" href="#">Pune</a></li>
+            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+            <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+            <li><a class="dropdown-item" href="#">Ahemadabad</a></li>
+            <li><a class="dropdown-item" href="#">Surat</a></li>
+            <li><a class="dropdown-item" href="#">Mumbai</a></li>
+            <li><a class="dropdown-item" href="#">Gurgaon</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="./resources.html">Resourses</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/animation.html">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html" >Contact Us</a>
+    </li>
+    <button class="btn btn-none" id="navmenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- navbar ends here  -->
+
+    <!-- this section is for the menu button present on a nav bar which appears when it reaches 1196px  -->
+    <!-- and when click on that menu button sidebar is come from the top  -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="sidebar-ul">
+          <li class="nav-li">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class=" nav-li" >
+            <a class="nav-link" href="#">About Us</a>
+            <span class="menu-btn" onclick="addAboutUsInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-aboutus"> </div>
+          <li class="nav-li" >
+            <a class="nav-link" href="/components/onlinecourses.html">Online Courses</a>
+          </li>
+          <li class=" nav-li">
+            <a class="nav-link"  href="#">Offline Courses</a> 
+            <span class="menu-btn" onclick="addOfflineCourseInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-offCourse"> </div>
+          <li class="nav-li">
+            <a class="nav-link ">Resourses</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link ">Blogs</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link ">Contact Us</a>
+          </li>
+      </ul>
+   </div>
+</div>
+<!-- here top sidebar content ends  -->
+</ul>
+</div>
+</div>
+
+<!-- here whole navbar section ends  -->
+    <h1>Refund policy</h1>
+<p>We&#8217;re so convinced you&#8217;ll absolutely love our services, that we&#8217;re willing to offer a 3 day risk-free money back guarantee. If you are not satisfied with the service for any reason you can get a refund within 3 days of making a purchase.</p>
+<h2>Contacting us</h2>
+<p>If you have any questions, concerns, or complaints regarding this refund policy, we encourage you to contact us using the details below:</p>
+<p><a href="http://www.clinc.in/contactus">http://www.clinc.in/contactus</a><br/><a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#99;l&#105;nc&#46;i&#110;c.of&#102;ici&#97;l&#64;&#103;&#109;&#97;i&#108;&#46;&#99;o&#109;">c&#108;inc.&#105;&#110;c&#46;of&#102;ici&#97;&#108;&#64;&#103;&#109;&#97;&#105;l&#46;c&#111;m</a></p>
+<p>This document was last updated on December 18, 2022</p>
+<p class="madewith"><a href="https://www.websitepolicies.com/?via=madewithbadge" target="_blank" rel="nofollow"><img width="200" height="25" alt="Made with WebsitePolicies" src="https://cdn.websitepolicies.io/img/badge.png" srcset="https://cdn.websitepolicies.io/img/badge_2x.png 2x"></a></p>
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-row">
+          <div class="footer-section-box">
+             <h2>Booming Bulls Academy</h2>
+          </div>
+          <div class="footer-section-box">
+            <h3>Explore</h3>
+            <ul class="foot-ul">
+              <li class="foot-li"><a href="#">About Us</a></li>
+              <li class="foot-li"><a href="#">Blogs</a></li>
+              <li class="foot-li"><a href="#">Important Links</a></li>
+              <li class="foot-li"><a href="#">Courses</a></li>
+              <li class="foot-li"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-section-box">
+            <h3>Resourses</h3>
+            <ul class="foot-ul">
+              <li class="foot-li"><a href="#">Testimonials</a></li>
+              <li class="foot-li"><a href="#">Upcoming Events</a></li>
+              <li class="foot-li"><a href="refund.html">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section-box">
+            <h3>Address</h3>
+            <ul class="foot-lastul ">
+              <li class="foot-li"><i class="fa-solid fa-location-dot" style="color: white;  font-size: 15px;"></i><a href="#">&nbsp; A5A7 Urbtech Trade Center, Sector 132, Noida 201304 </a></li>
+              <li class="foot-li"><i class="fa-solid fa-phone-volume" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; +91 81302-45100 </a></li>
+              <li class="foot-li"><i class="fa-solid fa-envelope" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; info@boomingbulls.com </a></li>
+            </ul>
+          </div>
+          <div class="footer-section-box">
+             <img src="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=8e760322-a55c-4a76-bfc1-09ee9be99457" alt="dmca">
+          </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-row">
+         <div class="footer-bot-box"><p>&copy;2019-2022 Booming Bulls. All rights reserved.</p>
+         </div>
+         <div class="footer-bot-box x1"><a href="privacypolicy.html">Terms & Conditions</a></div>
+      </div>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>

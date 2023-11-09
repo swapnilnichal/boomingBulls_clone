@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f40c28a478.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ccs-style.css">
+    <link rel="stylesheet" href="other-pages.css">
+    <!-- bootstrp links start  -->
+    <link href="https://www.dafontfree.net/embed/bnVuaXRvLXNhbnMtbGlnaHQmZGF0YS84MDcvbi8xODE3NjEvTnVuaXRvU2Fucy1MaWdodC50dGY" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrp links end  -->
+
+    <!-- map links start-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <!-- API KEY :-  AIzaSyCBFURATczdO37qj_GGE2G2u5OCdte5w3M -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCBFURATczdO37qj_GGE2G2u5OCdte5w3M&callback=initMap" async defer></script>
+    <script type="module" src="/index.js"></script>
+    <!-- map links ends  -->
+    <title>contact us</title>
+</head>
+<style>
+.contactus-container {
+    width: 100%;
+    height: 900px;
+    margin-top: 0%; margin-bottom: 20px;
+}
+.contact-row {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+position: relative;
+justify-content: center;
+padding-top: 80px;
+}
+.contact-details {
+    position: relative;
+    width:470px;height: 800px;
+    background-color: white;
+}
+.contact-details span { 
+    color:  #FE4A55; 
+    font-weight: 500; font-size: 15px;
+    font-family: "Nunito",sans-serif;
+}
+.contact-details h2 {
+    font-size: 30px;
+    font-family: "Nunito",sans-serif;
+    margin-top: 10px; margin-bottom: 20px;
+}
+.contact-details p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #606060;
+    font-weight: 100;
+}
+
+  .contact-details  ul {
+  margin-top: 0;
+  display: block;
+  list-style-type: none;
+  padding: 0%;
+}
+.contact-list {
+  position: relative;
+  height: 120px; width: 100%;
+  display: list-item;
+  list-style: none;
+  padding-left: 100px;
+}
+.contact-icon {
+  position: absolute;
+  line-height: 84px;
+  top: 0%; left: 0%;
+  display: inline-block;
+  height: 75px ; width: 65px;
+  background-color: #f8f9f8;
+  margin: 0%;
+  border-radius: 5px;
+}
+.contact-icon i {
+  position: absolute;
+  top: 20px; left: 20px;
+  color: #FE4A55;
+  font-size: 30px;
+}
+.contact-icon:hover{
+  /* background-color: #FE4A55; */
+}
+.contact-list h3 {
+  font-size: 20px;
+  font-family: "Nunito",sans-serif;
+  color: black;
+  font-weight: 600;
+  margin: 0%;
+}
+.contact-list p {
+  color: #606060;
+  font-family: poppins;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  padding-right: 200px;
+}
+.contact-list a { 
+    text-decoration: none; 
+    color: #FE4A55; 
+}
+
+
+        .contact-form {
+            position: relative;
+            width:470px;height: 800px;
+        }
+        .dabba{
+            background-image: url(https://themes.envytheme.com/ecademy/wp-content/uploads/2020/05/register-shape.jpg);
+            padding: 30px;
+            height: 530px;
+            border-radius: 5px;
+        }
+    
+
+        .formbox h2{
+            color: white;
+            font-size: 25px;
+        }
+        .formbox p{
+            color: white;
+            font-weight: 400;
+        }
+        input[type="text"]{
+            width: 90%;
+            padding:12px;
+            margin: 10px;
+            border:1px solid rgb(126, 113, 113);
+            border-radius: 5px;
+            color:white;
+            font-size: 15px;
+            background-color: #c22b34;
+        }
+        input[type="text"]::placeholder{
+            color: white;
+        }
+
+        .button {
+           float: left;
+           background-color: black;
+           color: white; 
+           font-size: 18px;
+           font-weight: bold;
+           text-decoration: none;
+           text-align: center; 
+           margin-top: 20px;margin-left: 10px;
+           padding: 13px 30px;
+           border: 1px black solid;
+           border-radius: 5px;
+           transition-duration: 0.4s;
+           cursor: pointer;
+        }
+        .button:hover{
+            color: tomato;
+            background-color: white;
+        }
+
+
+
+</style>
+<body>
+<!-- navbar starts here  -->
+<div class="container-fluid my-2" id="nav-container-wrapper">
+    <div class="logo">
+        <a class="nav-link " aria-current="page" href="/index.html"><img class="boom-logo" src="https://boomingbulls.com/wp-content/uploads/2021/06/250-x-69.png" alt="logo"></a>
+    </div>
+
+<div class="nav-wrapper">
+  <ul class="nav">
+    <li class="nav-item1">
+      <a class="nav-link" href="/index.html">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+         <ul class="dropdown-menu py-3 px-3">
+            <li><a class="dropdown-item" href="#">About Booming Bulls</a></li>
+            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="course.html">Online Courses</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Offline Courses</a>
+          <ul class="dropdown-menu py-4 px-4">
+            <li><a class="dropdown-item" href="#">Delhi</a></li>
+            <li><a class="dropdown-item" href="#">Pune</a></li>
+            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+            <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+            <li><a class="dropdown-item" href="#">ahemadabad</a></li>
+            <li><a class="dropdown-item" href="#">Surat</a></li>
+            <li><a class="dropdown-item" href="#">Mumbai</a></li>
+            <li><a class="dropdown-item" href="#">Gurgaon</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="resources.html">Resourses</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html" >Contact Us</a>
+    </li>
+    <button class="btn btn-none" id="navmenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- navbar ends here  -->
+
+    <!-- this section is for the menu button present on a nav bar which appears when it reaches 1196px  -->
+    <!-- and when click on that menu button sidebar is come from the top  -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="sidebar-ul">
+          <li class="nav-li">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class=" nav-li" >
+            <a class="nav-link" href="#">About Us</a>
+            <span class="menu-btn" onclick="addAboutUsInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-aboutus"> </div>
+          <li class="nav-li" >
+            <a class="nav-link" href="/components/onlinecourses.html">Online Courses</a>
+          </li>
+          <li class=" nav-li">
+            <a class="nav-link"  href="#">Offline Courses</a> 
+            <span class="menu-btn" onclick="addOfflineCourseInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-offCourse"> </div>
+          <li class="nav-li">
+            <a class="nav-link" href="resources.html">Resourses</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="/contactus.html">Contact Us</a>
+          </li>
+      </ul>
+   </div>
+</div>
+<!-- here top sidebar content ends  -->
+</ul>
+</div>
+</div>
+
+<!-- here whole navbar section ends  -->
+    <div class="mainbody">
+        <div class="mainbody-wrap">
+            <h2>Contact Us</h2>
+            <p><a href="/index.html">Home</a> / contact Us</p>
+        </div>
+    </div>
+
+    <div class="contactus-container">
+        <div class="contact-row">
+            <div class="contact-details">
+              <span>CONTACT DETAILS</span>
+              <h2>Get In Touch</h2>
+              <p>Have any query ? or want to know more ?<br>
+                Contact us and we will be happy to help.</p>
+                <!-- <div class="contact-info"> -->
+                   <ul>
+                        <li class="contact-list">
+                          <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                          </div>
+                          <h3>Our Address</h3>
+                          <p>A547, Urbtech Trade Center, Sector 132, Noida, 201304</p>
+                        </li>
+                        <li class="contact-list">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-calendar"></i>
+                            </div>
+                            <h3>E-mail</h3>
+                            <p>General Enquiry : 
+                                <a href="#">info@boomingbulls.com</a>  <br>
+                               business Enquiry : 
+                               <a href="#">deals@boomingbulls.com</a>
+                            </p>
+                          </li>
+                          <li class="contact-list">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <h3>Contact</h3>
+                            <p>Mobile: +91 81302-45100</p>
+                          </li>
+                          <li class="contact-list">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <h3>Hours Of Operation</h3>
+                            <p>Everyday: 10:00 AM to 7:00 PM IST</p>
+                          </li>
+                   </ul>
+            </div>
+            <div class="contact-form">
+                <div class="dabba">
+                    <div class="formbox">
+                        <h2>Ready to Get Started?</h2>
+                        <p>Your email address will not be published.</p>
+                    </div>
+                     <div class="box">
+                         <form action="#">
+                             <input type="text" placeholder="Your name" required><br>
+                             <input type="text" placeholder="Your e-mail adress" required><br>
+                             <input type="text" placeholder="Your phone number" required><br>
+                             <input type="text" placeholder="Your city" required><br>
+                            <input type="text" placeholder="Your query" required><br>
+                         </form>
+                           
+                           <button class="button" type="submit">
+                               Send Message
+                           </button>
+                     </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div>
+      <div id="map"></div>
+      <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+          ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});
+      </script>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-row">
+              <div class="footer-section-box">
+                 <h2>Booming Bulls Academy</h2>
+              </div>
+              <div class="footer-section-box">
+                <h3>Explore</h3>
+                <ul class="foot-ul">
+                  <li class="foot-li"><a href="#">About Us</a></li>
+                  <li class="foot-li"><a href="#">Blogs</a></li>
+                  <li class="foot-li"><a href="#">Important Links</a></li>
+                  <li class="foot-li"><a href="#">Courses</a></li>
+                  <li class="foot-li"><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-box">
+                <h3>Resourses</h3>
+                <ul class="foot-ul">
+                  <li class="foot-li"><a href="#">Testimonials</a></li>
+                  <li class="foot-li"><a href="#">Upcoming Events</a></li>
+                  <li class="foot-li"><a href="#">Refund Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-box">
+                <h3>Address</h3>
+                <ul class="foot-lastul ">
+                  <li class="foot-li"><i class="fa-solid fa-location-dot" style="color: white;  font-size: 15px;"></i><a href="#">&nbsp; A5A7 Urbtech Trade Center, Sector 132, Noida 201304 </a></li>
+                  <li class="foot-li"><i class="fa-solid fa-phone-volume" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; +91 81302-45100 </a></li>
+                  <li class="foot-li"><i class="fa-solid fa-envelope" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; info@boomingbulls.com </a></li>
+                </ul>
+              </div>
+              <div class="footer-section-box">
+                 <img src="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=8e760322-a55c-4a76-bfc1-09ee9be99457" alt="dmca">
+              </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-row">
+             <div class="footer-bot-box"><p>&copy;2019-2022 Booming Bulls. All rights reserved.</p>
+             </div>
+             <div class="footer-bot-box x1"><a href="#">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+      </footer>
+</body>
+</html>

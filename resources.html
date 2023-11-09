@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ccs-style.css">
+    <link rel="stylesheet" href="other-pages.css">
+    <!-- bootstrp links start  -->
+    <link href="https://www.dafontfree.net/embed/bnVuaXRvLXNhbnMtbGlnaHQmZGF0YS84MDcvbi8xODE3NjEvTnVuaXRvU2Fucy1MaWdodC50dGY" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrp links end  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Resources Page</title>
+</head>
+<body>
+     <!-- navbar starts here  -->
+
+<div class="container-fluid my-2" id="nav-container-wrapper">
+    <div class="logo">
+        <a class="nav-link " aria-current="page" href="/index.html"><img class="boom-logo" src="https://boomingbulls.com/wp-content/uploads/2021/06/250-x-69.png" alt="logo"></a>
+    </div>
+
+<div class="nav-wrapper ">
+  <ul class="nav">
+    <li class="nav-item1">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">About Us</a>
+         <ul class="dropdown-menu py-3 px-3">
+            <li><a class="dropdown-item" href="#">About Booming Bulls</a></li>
+            <li><a class="dropdown-item" href="#">Testimonials</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="course.html">Online Courses</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Offline Courses</a>
+          <ul class="dropdown-menu py-4 px-4">
+            <li><a class="dropdown-item" href="#">Delhi</a></li>
+            <li><a class="dropdown-item" href="#">Pune</a></li>
+            <li><a class="dropdown-item" href="#">Hyderabad</a></li>
+            <li><a class="dropdown-item" href="#">Bengaluru</a></li>
+            <li><a class="dropdown-item" href="#">ahemadabad</a></li>
+            <li><a class="dropdown-item" href="#">Surat</a></li>
+            <li><a class="dropdown-item" href="#">Mumbai</a></li>
+            <li><a class="dropdown-item" href="#">Gurgaon</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Resourses</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Blogs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html" >Contact Us</a>
+    </li>
+    <button class="btn btn-none" id="navmenu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- navbar ends here  -->
+
+    <!-- this section is for the menu button present on a nav bar which appears when it reaches 1196px  -->
+    <!-- and when click on that menu button sidebar is come from the top  -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+       <h5 class="offcanvas-title" id="offcanvasTopLabel"></h5>
+       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <ul class="sidebar-ul">
+          <li class="nav-li">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class=" nav-li" >
+            <a class="nav-link" href="#">About Us</a>
+            <span class="menu-btn" onclick="addAboutUsInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-aboutus"> </div>
+          <li class="nav-li" >
+            <a class="nav-link" href="/components/onlinecourses.html">Online Courses</a>
+          </li>
+          <li class=" nav-li">
+            <a class="nav-link"  href="#">Offline Courses</a> 
+            <span class="menu-btn" onclick="addOfflineCourseInfo(this)"><i class="fa-solid fa-plus"></i></span>
+          </li>
+          <div id="add-offCourse"> </div>
+          <li class="nav-li">
+            <a class="nav-link" href="/resources.html">Resourses</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="/contactus.html">Contact Us</a>
+          </li>
+      </ul>
+   </div>
+</div>
+<!-- here top sidebar content ends  -->
+</ul>
+</div>
+</div>
+<!-- here whole navbar section ends  -->
+<main>
+    <div class="mainbody">
+        <div class="mainbody-wrap">
+            <h2>Resources</h2>
+            <p><a href="./index.html">Home</a> / resources</p>
+        </div>
+    </div>
+    <div class="container one-million" >
+        <h2>1 Millions Subscribers Gift</h2>
+    </div>
+    <div class="trade-material-wrapper">
+      <div class="tradeMaterial-img-wrap">
+        <div><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Candlestick-Pattern-724x1024.jpg" class="trade-material" alt="trade-material"></div>
+        <div><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Trading-Checklist-Light-724x1024.jpg" class="trade-material" alt="trade-material"></div>
+        <div><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Chart-Pattern-724x1024.jpg" class="trade-material" alt="trade-material"></div>
+        <div><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Candlestick-Pattern-Light-724x1024.jpg" class="trade-material" alt="trade-material"></div>
+        <div><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Trading-Checklist-724x1024.jpg" class="trade-material" alt="trade-material"></div>
+        <div><img src="https://boomingbulls.com/wp-content/uploads/2022/05/Chart-Pattern-Light-724x1024.jpg" class="trade-material" alt="trade-material"></div>
+      </div>
+    </div>
+    <div class="download-material">
+      <a href="https://drive.google.com/drive/folders/1TYPY0wsIf0mm92x1usKTfMwwA6hRKS3B">
+        <button class="download-btn"><span style="margin-right: 8px;"><i class="fas fa-download"></i></span>Download HD Images</button>
+      </a>
+    </div>
+    <div class="container one-million" >
+      <h2>Books We Recommend</h2>
+    </div>
+  <div class="books-main-wrapper">
+    <div class="books-wrapper">
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/2020/10/51IMSNwYxrL._SX331_BO1204203200_.jpg" alt="book">
+          <h4>New Trader Rich Trader - Steve Burns</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/2022/12/trade-your-way.jpg">
+          <h4>Trade your way to financial freedom</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/elementor/thumbs/51zIH54q13L._SX346_BO1204203200_-qbmayu60xdelgsu5nkkd7utq9nfqfl9qk1drz3lpo0.jpg">
+          <h4>Super Trader - Van Tharp</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/elementor/thumbs/51nmPA3HyfL-qbmayu60xdelgsu5nkkd7utq9nfqfl9qk1drz3lpo0.jpg">
+          <h4>Trading Habits - Steve Burns</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/2022/12/tmind.jpg">
+          <h4>Trade Mindfully</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/2020/10/51pJPs1sMHL._SX320_BO1204203200_.jpg">
+          <h4>Trading in the zone - Mark Douglas</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/2020/10/51rC1PZVJjL._SX328_BO1204203200_.jpg">
+          <h4>High probability trading - Link Marcel</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="books">
+        <div class="book-img-wrapper">
+          <img class="book-img" src="https://boomingbulls.com/wp-content/uploads/elementor/thumbs/greatest-stock-market-traders-qbmaysacjpbwq9g13c0mdg4t0405r0o1d2z8lydi7c.jpg">
+          <h4>Lessons from greatest stock trader of all time</h4>
+          <div class="book-details">
+            <ul>
+              <li>Beginner <img draggable="false" role="img" class="emoji" alt="✅" src="https://s.w.org/images/core/emoji/14.0.0/svg/2705.svg"></li>
+              <li>Experienced Trader <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+              <li>Self Help <img draggable="false" role="img" class="emoji" alt="❌" src="https://s.w.org/images/core/emoji/14.0.0/svg/274c.svg"></li>
+            </ul>
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <img draggable="false" role="img" class="emoji" alt="⭐️" src="https://s.w.org/images/core/emoji/14.0.0/svg/2b50.svg">
+            <div class="book-btn-wrapper">
+              <a href="https://www.amazon.in/gp/product/1979955808/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=1979955808&linkCode=as2&tag=boomingbulls-21&linkId=238e393c572b632b95052e9895cae349">
+                <button class="book-btn">
+                <span style="margin-right: 5px;"><i class="fa-solid fa-book"></i></span>
+                Buy Now
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-row">
+              <div class="footer-section-box">
+                 <h2>Booming Bulls Academy</h2>
+              </div>
+              <div class="footer-section-box">
+                <h3>Explore</h3>
+                <ul class="foot-ul">
+                  <li class="foot-li"><a href="#">About Us</a></li>
+                  <li class="foot-li"><a href="#">Blogs</a></li>
+                  <li class="foot-li"><a href="#">Important Links</a></li>
+                  <li class="foot-li"><a href="#">Courses</a></li>
+                  <li class="foot-li"><a href="#">Careers</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-box">
+                <h3>Resourses</h3>
+                <ul class="foot-ul">
+                  <li class="foot-li"><a href="#">Testimonials</a></li>
+                  <li class="foot-li"><a href="#">Upcoming Events</a></li>
+                  <li class="foot-li"><a href="refund.html">Refund Policy</a></li>
+                </ul>
+              </div>
+              <div class="footer-section-box">
+                <h3>Address</h3>
+                <ul class="foot-lastul ">
+                  <li class="foot-li"><i class="fa-solid fa-location-dot" style="color: white;  font-size: 15px;"></i><a href="#">&nbsp; A5A7 Urbtech Trade Center, Sector 132, Noida 201304 </a></li>
+                  <li class="foot-li"><i class="fa-solid fa-phone-volume" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; +91 81302-45100 </a></li>
+                  <li class="foot-li"><i class="fa-solid fa-envelope" style="color: white; font-size: 15px;"></i><a href="#">&nbsp; info@boomingbulls.com </a></li>
+                </ul>
+              </div>
+              <div class="footer-section-box">
+                 <img src="https://images.dmca.com/Badges/dmca_protected_26_120.png?ID=8e760322-a55c-4a76-bfc1-09ee9be99457" alt="dmca">
+              </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-row">
+             <div class="footer-bot-box"><p>&copy;2019-2022 Booming Bulls. All rights reserved.</p>
+             </div>
+             <div class="footer-bot-box x1"><a href="privacypolicy.html">Terms & Conditions</a></div>
+          </div>
+        </div>
+      </div>
+      </footer>
+</body>
+</html>

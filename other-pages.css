@@ -1,0 +1,126 @@
+
+.mainbody{
+    min-height: 220px; width: 100vw;
+    background-image: -webkit-linear-gradient(180deg,#d15c38 0%,#d33 100%) !important;
+    background-size: cover;
+    border:1px solid tomato;
+    display: flex;
+    flex-wrap: nowrap;
+     position: relative;
+    justify-content: center;
+}
+.mainbody-wrap { position: relative; padding-top: auto; }
+.mainbody h2{
+    color: white;
+    font-family: "Nunito",sans-serif;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10%; margin-top: 70px;
+}
+.mainbody p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+.mainbody a { text-decoration: none; color: white; }
+
+/* ---------------------- resources page css -------------------------------- */
+.one-million{
+    display: flex;
+    justify-content: center;
+    padding: 40px 40px;
+}
+.trade-material-wrapper, .books-main-wrapper{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.tradeMaterial-img-wrap{
+    width: 905px;
+    display: flex;
+    flex-wrap: wrap;
+   margin-bottom: 20px;
+}
+.trade-material{
+    height: 400px;
+    width: 280px;
+    margin: 10px;
+}
+.download-material{
+    display: flex;
+    justify-content: center;
+}
+.download-btn{
+    background-color: #d15c38;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+.books-wrapper{
+    width: 910px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.books{
+    min-height: 450px;
+    width: 205px;
+    margin: 10px;
+    overflow: auto;
+}
+.book-img-wrapper{
+    height: 230px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.book-img{
+    height: 200px;
+    width: 180;
+}
+.book-img-wrapper h4{
+    font-size: 21px;
+    font-weight:400;
+    text-align: center;
+}
+.book-details{
+    align-items: center;
+    text-align: center;
+}
+.book-details ul{
+text-decoration: none;
+list-style: none;
+}
+.emoji{
+    height: 15px;
+    width: 15px;
+    margin: 0%;
+    padding: 0%;
+}
+.book-btn{
+    background-color: rgb(234, 185, 94);
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: white;
+    margin-top: 15px;
+}
+
+/* ----------- contact-us page : google map css ------------- */
+
+ #map {
+    height: 400px;
+    width: 100%; 
+}
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
